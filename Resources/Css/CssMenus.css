@@ -1,0 +1,362 @@
+/* 
+    Document   : CssMenus
+    Created on : 04/01/2014, 15:24:59
+    Author     : Juliano
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.menu{
+    margin: 17% 10% 0 10%;
+    width: 80%;
+    float: top;
+    clear: both;
+    position: relative;
+    min-width: 100px;
+    min-height: 90px;
+    text-align: center;
+    padding: 0;
+    font-size: 0.8em; 
+    height: 100%;
+    /*background: url(../Img/backgroundmenus.png) repeat;*/
+    background: #CFECA9;
+    border: #333 solid 2px;
+}
+.menu ul {
+    /*    border: #333 solid 2px;*/
+    /*background: url(../Img/backgroundmenus.png) repeat;*/
+    margin: 0 10px 0 0;
+    float: left;
+    width: 96%;
+    height: 100%;
+    position: relative;
+    list-style:none;
+    clear: both;
+}
+.menu ul li {  
+    margin: 0 6% 0 0;
+    float: left;
+    display: inline;
+    position: relative;
+    width: 10%;
+    min-width:100px;
+    padding: 0px;
+}
+.menu ul li a {
+    width: 90%;
+    float: left;
+    display: inline-block;
+    /* visual do link */
+    text-decoration: none;
+    font: 16px Trebuchet MS,Sans-Serif, Verdana, Arial, Helvetica ;
+    color:black;
+    *cursor: hand;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li a:hover {
+    width: 90px;
+    height: 90%;
+    float: left;
+    padding: 0;
+    /*border: #333 solid 2px;*/
+    /*background: url(../Img/backgroundmenus2.png) repeat;*/
+    background: #8EA563;
+    color:#fff;
+    -moz-box-shadow:0 3px 30px 0 #CCC;
+    -webkit-box-shadow:0 5px 8px 5px #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+.imgMenu{
+    width: 60%;
+    min-width: 20px;
+    min-height: 20px;
+    alignment-adjust: central;
+}
+.imgsubmenu{
+    width: 20%;
+    float: left;
+    position: relative;
+    clear: both;
+}
+.pai_menu{
+    float: left;
+    clear: both;
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+.reset{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+.conteudoMenu {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 200%;
+    clear: both;
+    z-index: 9999;
+    margin:0;
+    padding: 0;
+    clear: both;
+    background: #CFECA9;
+}
+.conteudoMenu a, hr{
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 10%;
+}
+.conteudoMenu a {
+    width: 100%;
+    height: 20px;
+    text-decoration: none;
+    color: black;
+}
+.conteudoMenu li a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+.conteudoMenu ul {
+    float: left;
+    width: 170%;
+    min-width: 50px;
+    height: 100%;
+    position: relative;
+    list-style:none;
+    clear: both;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+}
+.conteudoMenu ul li ul{
+    float: left;
+    margin-left: 10px;
+    height: 100%;
+    position: relative;
+    list-style:none;
+    clear: both;
+    border: 0px;
+}
+.menu ul li .conteudoMenu a  {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    /* visual do link */
+    text-decoration: none;
+    font: 11px Trebuchet MS,Sans-Serif, Verdana, Arial, Helvetica ;
+    color:black;
+    *cursor: hand;
+    padding: 0;
+    margin-top: 5px;
+    clear: both
+}
+#rel {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    /* visual do link */
+    text-decoration: none;
+    font: 11px Trebuchet MS,Sans-Serif, Verdana, Arial, Helvetica ;
+    color:black;
+    *cursor: hand;
+    padding: 0;
+    margin-top: 5px;
+}
+#relusu  {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    /* visual do link */
+    text-decoration: none;
+    font: 11px Trebuchet MS,Sans-Serif, Verdana, Arial, Helvetica ;
+    color:black;
+    *cursor: hand;
+    padding: 0;
+    margin-top: 5px;
+}
+.pai_Submenu{
+    float: left;
+    clear: both;
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+
+/* ajustes de tela*/
+@media only  screen and (max-width:1245px){
+    /* Define a margin do menu em 0 5% 0 0*/
+    .menu ul li {
+        margin:0 5% 0 0;
+    }
+}
+@media only  screen and (max-width:1153px){
+        /* Define a margin do menu em 0 3% 0 0*/
+    .menu ul li {
+        margin:0 3% 0 0;
+    }
+    /* Retira coluna usuarios da tabela manutenção*/
+    #usuarios{
+        display : none;
+    }
+}
+@media only  screen and (max-width:990px){
+ /* Retira coluna turno da tabela manutenção*/
+        #turnos{
+        display : none;
+    }
+}
+@media only  screen and (max-width:973px){
+        /* Define a margin do menu em  0 1.5% 0 0*/
+    .menu ul li {
+        margin:0 1.5% 0 0;
+    }
+
+}
+@media only  screen and (max-width:900px){
+        /* Retira email da tabela usuario*/
+    #email {
+        display: none;
+    }
+
+}
+@media only  screen and (max-width:890px){
+/* Retira data da tabela manutenção*/
+        #datas{
+        display : none;
+    }
+    }
+@media only  screen and (max-width:878px){
+     /* Define a margin do menu em  0 */
+    .menu ul li {
+        margin:0 0% 0 0;
+    }
+ /* Retira configuração turno da tabela maquina*/   
+    #configuracao{
+        display: none;
+    }
+}
+@media only  screen and (max-width:810px){
+    /*define o comprimento do menu em 180px*/
+    .menu  {
+        height: 180px;
+    }
+    /*retira o nome do usuario e o labal do logout*/
+    #usuario, .logar1{
+        display: none;
+
+    }
+    /*define margin de 1px a classe logar*/
+    .logar{
+        margin-top: 1px; 
+    }
+  /*  define o tamanho da imagem da classe logar em 30px*/
+    .logar img{
+        width: 30px;
+    }
+    /*retira a coluna data da tabela de pedidos*/
+    #data{
+        display: none; 
+    }
+}
+@media only  screen and (max-width:770px){
+/*Retira a coluna tipo de manutenção da tabela manutenção*/
+        #tipomanutencao{
+        display : none;
+    }
+    }
+@media only  screen and (max-width:700px){
+/*retira a coluna laboratorio  da tabela maquinas*/
+        #laboratorio3{
+        display : none;
+    }
+    }
+@media only  screen and (max-width:650px){
+/*retira a coluna sobrenome da tabela usuarios*/
+        #sobrenomes{
+        display : none;
+    }
+    }
+@media only  screen and (max-width:630px){
+/* retira a coluna laboratório da tabela manutenção */
+        #laboratorio{
+        display : none;
+    }
+    }
+@media only  screen and (max-width:560px){
+/* retira a coluna patrimonio da tabela maquinas*/
+        #patrimonios {
+        display : none;
+    }
+    }
+@media only  screen and (max-width:510px){
+/* retira a turno patrimonio da tabela usuario*/
+        #turnoss {
+        display : none;
+    }
+    }
+@media only  screen and (max-width:490px){
+/*retira a coluna solução da tabela manutenção*/
+        #solucao1{
+        display : none;
+    }
+   
+    }
+@media only screen and (max-width:400px){
+    /*Define o heigth do menu em 270px*/
+    .menu  {
+        height: 270px;
+    }
+    /*define margin 0 para o menu*/ 
+    .menu ul {
+        margin: 0
+    }
+    /*Retira a coluna Problemas da tabela manutenção*/
+    #problemas{
+        display: none;
+    }
+}
+@media only screen and (max-width:340px){
+        /*Retira a coluna descricao da tabela Pedidos*/
+   .divPequena #conse{
+        margin-top: 50px
+    }
+    }
+@media only screen and (max-width:320px){
+        /*Retira a coluna descricao da tabela Pedidos*/
+    #descricao{
+        display: none;
+    }
+/*    li a span label{
+        size: 0.8em;
+    }*/
+/*define o tamanho do capition das tabelas*/
+    caption{
+        width: 240px
+    }
+}
+@media only screen and (max-width:390px){
+    /*Retira a legenda ultimo e primeiro das tabelas*/
+    #DataTables_Table_0_first, #DataTables_Table_0_last{
+        display: none;
+    }
+    /*Define o heigth dos menu em 270px*/
+    .menu  {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    /*Retira a coluna mac da tabela maquina*/
+    #mac{
+        display:none
+    }
+}
+
+/*@media only screen and (max-width:600px){
+    ﻿div .msgBox{
+       width: 10px;
+    }
+}*/
